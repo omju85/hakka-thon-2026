@@ -1,5 +1,50 @@
 // Listinn er geymdur hér svo hver síða og leitin geti notað hann
 let allItems = [];
+let thrillerMovies = [];
+let categories = [];
+
+function getCategories() {
+  allItems.forEach((item) => {
+    item.categories.forEach((category) => {
+      if (!categories.includes(category)) {
+        categories.push(category);
+        console.log(categories);
+      }
+    });
+  });
+}
+
+function formatTime(minutes) {
+  let hours = 0;
+  let remainMinutes = 0;
+  let hourText = "";
+  let minuteText = "";
+
+  // Less than an hour
+  if (minutes < 60) {
+    if (minutes > 1) {
+      minuteText = " minutes";
+    } else {
+      minuteText = " minute";
+    }
+    return minutes + minuteText;
+  } else {
+    // Greater than an hour
+    remainMinutes = minutes % 60;
+    hours = (minutes - remainMinutes) / 60;
+    if (hours > 1) {
+      hourText = " hours";
+    } else {
+      hourText = " hour";
+    }
+    if (remainMinutes > 1) {
+      minuteText = " minutes";
+    } else {
+      minuteText = " minute";
+    }
+    return hours + hourText + " " + remainMinutes + minuteText;
+  }
+}
 
 // 1. SÆKTU GÖGNIN
 // Skrifið loadData sjálf, eins og á glærunum.
@@ -9,11 +54,32 @@ let allItems = [];
 // Vistið listann líka í allItems, því síðurnar og leitin þurfa hann aftur.
 // Þegar fallið er tilbúið skuluð þið kalla á loadData() neðst í skránni.
 
+async function loadData() {
+  const response = await fetch("./data.json");
+  const items = await response.json();
+
+  allItems = items;
+  thrillerMovies = items.filter((item) => item.categories.includes("Thriller"));
+
+  getCategories();
+  renderHero(allItems);
+
+  categories.forEach((category) => {
+    renderRows(
+      allItems.filter((item) => item.categories.includes(category)),
+      category,
+    );
+  });
+}
+loadData();
+
 // 2. FORSÍÐA (HERO)
+
 function renderHero(items) {
   // Verkefni: notið .filter() til að halda aðeins eftir atriðum þar sem featured er true.
   // Á movies.html og series.html á hero-Swiper líka aðeins að sýna þann type, sjá lið 4.
-  const featured = items;
+  const featured = items.filter((item) => item.featured);
+  console.log("featured", featured);
 
   // Verkefni: notið .map() til að breyta hverju atriði í eina glæru.
   // Hver glæra þarf klasana "swiper-slide hero-slide".
@@ -23,9 +89,16 @@ function renderHero(items) {
     .map(
       (item) => `
     <div class="swiper-slide hero-slide" style="background-image: url('${item.backdrop}')">
+      <div class="hero-banner">
       <h1>${item.title}</h1>
+      <p>${item.description}</p>
+      <p>Year: ${item.year}</p>
+      <p>Duration: ${formatTime(item.duration)}</p>
+      <p>Rating: ${item.rating}</p>
+      <a href="movie.html?id=${item.id}">Spila stikklu</a>
+      </div>
     </div>
-  `
+  `,
     )
     .join("");
 
@@ -34,6 +107,7 @@ function renderHero(items) {
   // Ræsið Swiper EFTIR að glærurnar eru komnar á síðuna. Prófið að breyta stillingunum!
   new Swiper(".hero", {
     loop: true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
     pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -71,12 +145,44 @@ function renderHero(items) {
 //      navigation: örvarnar sem eru inni í þessari row, ekki örvarnar á forsíðunni.
 //        Sami klasi (swiper-button-next) er á mörgum stöðum. Finnið hnappinn
 //        með element.querySelector, þar sem element er þessi röð.
-function renderRows(items) {
+function renderRows(items, title) {
   const rows = document.querySelector("#rows");
 
-  // Verkefni: ákveðið hvaða atriði eiga að sjást og setjið raðirnar á síðuna
-  rows.innerHTML = "";
+  rows.insertAdjacentHTML(
+    "beforeend",
+    `<section id="row">
+      <h2>${title}</h2>
+      <div class="swiper row-swiper">
+        <div class="swiper-wrapper">
+          ${items.map((item) => `<div class="swiper-slide">${cardHtml(item)}</div>`).join("")}
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>`,
+  );
+
+  const element = rows.lastElementChild.querySelector(".row-swiper");
+  new Swiper(element, {
+    slidesPerView: auto,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: element.querySelector(".swiper-button-next"),
+      prevEl: element.querySelector(".swiper-button-prev"),
+    },
+  });
 }
+
+function cardHtml(item) {
+  return `
+  <a class="card" href="movie.html?id=${item.id}">
+  <div>
+  <img src="${item.image}"/>
+  <h4>${item.title}</h4>
+  </div>
+  </a>`;
+}
+/* Mynd, title, description */
 
 // 4. MOVIES OG SERIES ERU SÉR SÍÐUR
 // Home, Movies og Series eru þrjár HTML-síður. Hver síða hleður þessa script.js
@@ -97,30 +203,3 @@ function renderRows(items) {
 //   - renderHero: featured er true. Ef page er ekki "all", líka item.type === page.
 //   - renderRows: ef page er ekki "all", aðeins atriði þar sem item.type === page.
 // index.html sýnir bæði movies og series. movies.html aðeins movies. series.html aðeins series.
-
-// 5. LEITARLISTI
-// #search er inputið. #search-results er tómt <ul> fyrir neðan það.
-// Listinn er falinn með hidden þangað til eitthvað passar.
-//
-// Verkefni: hlustið á "input". Þið eigið bara að gera tvennt:
-//   1. Filterið allItems út frá textanum í inputinu.
-//      Notið toLowerCase() og trim(), og haldið titlum sem innihalda textann.
-//   2. Setjið niðurstöðurnar í #search-results, eitt <li> fyrir hvern titil.
-//
-// Ef textinn er tómur: tæmið listann og felið hann aftur (hidden = true).
-// Ef eitthvað fannst: takið hidden af og sýnið listann.
-// Takmarkið fjöldann, t.d. fyrstu 8.
-//
-// Eitt <li> er hlekkur svo smellt opni rétta mynd:
-// <li><a href="movie.html?id=${item.id}">${item.title}</a></li>
-//
-// allItems verður að vera vistaður í loadData, annars er listinn tómur.
-
-const searchInput = document.querySelector("#search");
-const searchResults = document.querySelector("#search-results");
-
-searchInput.addEventListener("input", (event) => {
-  const text = event.target.value.toLowerCase().trim();
-
-  // Verkefni: filterið allItems með text og setjið <li> í searchResults
-});

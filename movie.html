@@ -1,22 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Streaming Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header class="navbar">
-    <a href="index.html" class="logo">MY SITE</a>
-    <!-- Bætið við <nav class="site-nav"> með þremur <a>:
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Streaming Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="index.html" class="logo">Chillflix</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="movie.html">Movies</a>
+        <a href="series.html">Series</a>
+      </nav>
+      <!-- Bætið við <nav class="site-nav"> með þremur <a>:
          Home á index.html, Movies á movies.html, Series á series.html. -->
-  </header>
+    </header>
 
-  <!-- movie.js fyllir þennan <main> út frá ?id= í slóðinni -->
-  <main id="movie-page" class="movie-page"></main>
+    <!-- movie.js fyllir þennan <main> út frá ?id= í slóðinni -->
+    <main id="movie-page" class="movie-page"></main>
 
-  <script src="movie.js"></script>
-</body>
+    <script src="movie.js"></script>
+  </body>
 </html>

@@ -1,37 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movies · My Streaming Site</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies · My Streaming Site</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body data-page="movie">
-
-  <header class="navbar">
-    <a href="index.html" class="logo">MY SITE</a>
-    <!-- Bætið við <nav class="site-nav"> með þremur <a>:
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="movie">
+    <header class="navbar">
+      <a href="index.html" class="logo">Chillflix</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="movies.html">Movies</a>
+        <a href="series.html">Series</a>
+      </nav>
+      <!-- Bætið við <nav class="site-nav"> með þremur <a>:
          Home á index.html, Movies á movies.html, Series á series.html.
          class="active" á síðuna sem er opin. -->
-    <div class="search-wrap">
-      <input type="search" id="search" placeholder="Search titles..." autocomplete="off">
-      <!-- #search-results byrjar tómur og falinn. Þið fyllið hann í script.js -->
-      <ul id="search-results" class="search-results" hidden></ul>
-    </div>
-  </header>
+      <div class="search-wrap">
+        <input
+          type="search"
+          id="search"
+          placeholder="Search titles..."
+          autocomplete="off"
+        />
+        <!-- #search-results byrjar tómur og falinn. Þið fyllið hann í script.js -->
+        <ul id="search-results" class="search-results" hidden></ul>
+      </div>
+    </header>
 
-  <section class="swiper hero">
-    <div class="swiper-wrapper" id="hero-slides"></div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </section>
+    <section class="swiper hero">
+      <div class="swiper-wrapper" id="hero-slides"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
 
-  <main id="rows"></main>
+    <main id="rows"></main>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <script src="movies.js"></script>
+  </body>
 </html>

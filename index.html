@@ -1,44 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Streaming Site</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Streaming Site</title>
 
-  <!-- Swiper CSS, verður að vera í head -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body data-page="all">
-
-  <header class="navbar">
-    <a href="index.html" class="logo">MY SITE</a>
-    <!-- Bætið við <nav class="site-nav"> með þremur <a>:
+    <!-- Swiper CSS, verður að vera í head -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="all">
+    <header class="navbar">
+      <a href="index.html" class="logo">Chillflix</a>
+      <!-- Bætið við <nav class="site-nav"> með þremur <a>:
          Home á index.html, Movies á movies.html, Series á series.html.
          class="active" á síðuna sem er opin. -->
-    <div class="search-wrap">
-      <input type="search" id="search" placeholder="Search titles..." autocomplete="off">
-      <!-- #search-results byrjar tómur og falinn. Þið fyllið hann í script.js -->
-      <ul id="search-results" class="search-results" hidden></ul>
-    </div>
-  </header>
+      <nav class="site-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="series.html">Series</a>
+      </nav>
+      <div class="search-wrap">
+        <input
+          type="search"
+          id="search"
+          placeholder="Search titles..."
+          autocomplete="off"
+        />
+        <!-- #search-results byrjar tómur og falinn. Þið fyllið hann í script.js -->
+        <ul id="search-results" class="search-results" hidden></ul>
+      </div>
+    </header>
 
-  <!-- Hero-Swiper þarf þessa uppbyggingu: .swiper > .swiper-wrapper > .swiper-slide -->
-  <section class="swiper hero">
-    <div class="swiper-wrapper" id="hero-slides">
-      <!-- JavaScript setur slides hér -->
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </section>
+    <!-- Hero-Swiper þarf þessa uppbyggingu: .swiper > .swiper-wrapper > .swiper-slide -->
+    <section class="swiper hero">
+      <div class="swiper-wrapper" id="hero-slides">
+        <!-- JavaScript setur slides hér -->
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
 
-  <main id="rows">
-    <!-- JavaScript setur raðirnar hér -->
-  </main>
+    <main id="rows">
+      <!-- JavaScript setur raðirnar hér -->
+    </main>
 
-  <!-- Swiper JS fyrst, svo okkar script -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <!-- Swiper JS fyrst, svo okkar script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+  </body>
 </html>

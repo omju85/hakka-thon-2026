@@ -14,6 +14,8 @@ body {
   position: relative;
   z-index: 10;
   padding: 16px 4%;
+  display:flex;
+  justify-content: space-between;
 }
 
 .search-wrap {
@@ -94,6 +96,7 @@ body {
 .hero-slide {
   background-size: cover;
   background-position: center;
+  align-content: end;
 }
 
 main {
@@ -167,4 +170,99 @@ main {
   display: block;
 }
 
-/* TODO: style your cards, rows, buttons... make it yours! */
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 25px;
+  gap: 4px;
+}
+.hero-banner a {
+  color: white;
+  width: 120px;
+  border: 4px solid;
+  background-color: rgba(255, 0, 0, 0.6);
+  border-color: red;
+  padding: 4px;
+}
+.movie-page {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.video {
+  width: 100vw;
+  height: 500px;
+  border: 4px solid;
+  border-color: red;
+  display: flex;
+  margin-top: 20px;
+}
+
+.categories {
+  display: flex;
+  gap: 6px;
+}
+
+.categories p {
+  border: 1px solid;
+  border-color: red;
+  padding: 4px 8px;
+  border-radius: 16px;
+  background-color: rgba(215, 8, 8, 0.321);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  max-width: 200px;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.card h4 {
+  color: white;
+  border: 4px solid;
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.539);
+  
+}
+
+.card img {
+  display: flex;
+  max-width: 200px;
+  height: 300px;
+  border: 4px solid;
+  border-color: red;
+  margin-bottom: 4px;
+  
+}
+
+.row {
+  display:flex;
+  width: 100%;
+  overflow:scroll;
+  gap: 8px;
+}
+
+
+
+.swiper {
+  --swiper-navigation-color: red;
+  --swiper-pagination-color: red;
+}
+
+.swiper-slide {
+  width: 200px;
+}
+/* TODO: style yo
