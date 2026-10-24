@@ -1,0 +1,656 @@
+[
+  {
+    "id": 1,
+    "title": "Midnight Harbor",
+    "type": "movie",
+    "categories": [
+      "Thriller",
+      "Crime"
+    ],
+    "description": "A dockworker stumbles onto a smuggling ring and has one night to get out before the tide turns against him.",
+    "year": 2023,
+    "duration": 118,
+    "seasons": null,
+    "rating": 7.8,
+    "image": "https://picsum.photos/seed/midnight-harbor/400/600",
+    "backdrop": "https://picsum.photos/seed/midnight-harbor-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Northern Lights Café",
+    "type": "series",
+    "categories": [
+      "Romance",
+      "Comedy"
+    ],
+    "description": "Two rival baristas in a tiny Icelandic town keep falling for each other at the worst possible moments.",
+    "year": 2024,
+    "duration": 32,
+    "seasons": 2,
+    "rating": 8.1,
+    "image": "https://picsum.photos/seed/northern-lights-cafe/400/600",
+    "backdrop": "https://picsum.photos/seed/northern-lights-cafe-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=eRsGyueVLvQ",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "The Last Signal",
+    "type": "movie",
+    "categories": [
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "description": "An astronaut on a dying station receives a message from Earth that should be impossible.",
+    "year": 2022,
+    "duration": 131,
+    "seasons": null,
+    "rating": 8.4,
+    "image": "https://picsum.photos/seed/the-last-signal/400/600",
+    "backdrop": "https://picsum.photos/seed/the-last-signal-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=R6MlUcmOul8",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Kitchen Wars",
+    "type": "series",
+    "categories": [
+      "Reality",
+      "Comedy"
+    ],
+    "description": "Home cooks battle through outrageous cooking challenges for a shot at their own restaurant.",
+    "year": 2021,
+    "duration": 45,
+    "seasons": 4,
+    "rating": 6.9,
+    "image": "https://picsum.photos/seed/kitchen-wars/400/600",
+    "backdrop": "https://picsum.photos/seed/kitchen-wars-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=TLkA0RELQ1g",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Shadows of Reykjavík",
+    "type": "series",
+    "categories": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "description": "A detective returns to her hometown to solve a cold case that her own father could never close.",
+    "year": 2023,
+    "duration": 52,
+    "seasons": 3,
+    "rating": 8.7,
+    "image": "https://picsum.photos/seed/shadows-of-reykjavik/400/600",
+    "backdrop": "https://picsum.photos/seed/shadows-of-reykjavik-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=WhWc3b3KhnY",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "title": "Paper Hearts",
+    "type": "movie",
+    "categories": [
+      "Romance",
+      "Drama"
+    ],
+    "description": "Letters left in library books connect two strangers living decades apart.",
+    "year": 2020,
+    "duration": 104,
+    "seasons": null,
+    "rating": 7.2,
+    "image": "https://picsum.photos/seed/paper-hearts/400/600",
+    "backdrop": "https://picsum.photos/seed/paper-hearts-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=Y-rmzh0PI3c",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Dragon Valley",
+    "type": "movie",
+    "categories": [
+      "Fantasy",
+      "Adventure",
+      "Family"
+    ],
+    "description": "A shy farm girl befriends a baby dragon and must protect it from a kingdom that fears it.",
+    "year": 2024,
+    "duration": 96,
+    "seasons": null,
+    "rating": 7.6,
+    "image": "https://picsum.photos/seed/dragon-valley/400/600",
+    "backdrop": "https://picsum.photos/seed/dragon-valley-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=mN0zPOpADL4",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "title": "Glitch",
+    "type": "series",
+    "categories": [
+      "Sci-Fi",
+      "Drama"
+    ],
+    "description": "A group of teenagers discover their town is a simulation, and someone is deleting people.",
+    "year": 2022,
+    "duration": 48,
+    "seasons": 2,
+    "rating": 8.0,
+    "image": "https://picsum.photos/seed/glitch/400/600",
+    "backdrop": "https://picsum.photos/seed/glitch-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=UXqq0ZvbOnk",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Laugh Track",
+    "type": "movie",
+    "categories": [
+      "Comedy"
+    ],
+    "description": "A washed-up sitcom star tries to reboot his career by hosting a children's cooking show.",
+    "year": 2019,
+    "duration": 92,
+    "seasons": null,
+    "rating": 6.4,
+    "image": "https://picsum.photos/seed/laugh-track/400/600",
+    "backdrop": "https://picsum.photos/seed/laugh-track-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=_cMxraX_5RE",
+    "featured": false
+  },
+  {
+    "id": 10,
+    "title": "The Silent Forest",
+    "type": "movie",
+    "categories": [
+      "Horror",
+      "Thriller"
+    ],
+    "description": "Campers in a remote forest realise every sound they make is being answered.",
+    "year": 2023,
+    "duration": 99,
+    "seasons": null,
+    "rating": 7.0,
+    "image": "https://picsum.photos/seed/the-silent-forest/400/600",
+    "backdrop": "https://picsum.photos/seed/the-silent-forest-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+    "featured": false
+  },
+  {
+    "id": 11,
+    "title": "Deep Blue",
+    "type": "series",
+    "categories": [
+      "Documentary"
+    ],
+    "description": "Explore the strangest creatures living in the darkest corners of the ocean.",
+    "year": 2021,
+    "duration": 55,
+    "seasons": 1,
+    "rating": 9.0,
+    "image": "https://picsum.photos/seed/deep-blue/400/600",
+    "backdrop": "https://picsum.photos/seed/deep-blue-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=eRsGyueVLvQ",
+    "featured": false
+  },
+  {
+    "id": 12,
+    "title": "Heist Academy",
+    "type": "series",
+    "categories": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "description": "A secret school trains the world's most talented thieves, but this year someone is stealing from the teachers.",
+    "year": 2024,
+    "duration": 42,
+    "seasons": 1,
+    "rating": 7.9,
+    "image": "https://picsum.photos/seed/heist-academy/400/600",
+    "backdrop": "https://picsum.photos/seed/heist-academy-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=R6MlUcmOul8",
+    "featured": true
+  },
+  {
+    "id": 13,
+    "title": "Ice and Fire Road",
+    "type": "movie",
+    "categories": [
+      "Adventure",
+      "Drama"
+    ],
+    "description": "Two estranged brothers drive around Iceland's ring road to scatter their father's ashes.",
+    "year": 2022,
+    "duration": 112,
+    "seasons": null,
+    "rating": 7.7,
+    "image": "https://picsum.photos/seed/ice-and-fire-road/400/600",
+    "backdrop": "https://picsum.photos/seed/ice-and-fire-road-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=TLkA0RELQ1g",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "title": "Pixel Pals",
+    "type": "series",
+    "categories": [
+      "Animation",
+      "Family",
+      "Comedy"
+    ],
+    "description": "Video game characters sneak out of their console at night to explore the real world.",
+    "year": 2020,
+    "duration": 22,
+    "seasons": 3,
+    "rating": 7.4,
+    "image": "https://picsum.photos/seed/pixel-pals/400/600",
+    "backdrop": "https://picsum.photos/seed/pixel-pals-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=WhWc3b3KhnY",
+    "featured": false
+  },
+  {
+    "id": 15,
+    "title": "Overdrive",
+    "type": "movie",
+    "categories": [
+      "Action",
+      "Thriller"
+    ],
+    "description": "A getaway driver is forced into one final job across a city locked down by a storm.",
+    "year": 2021,
+    "duration": 107,
+    "seasons": null,
+    "rating": 6.8,
+    "image": "https://picsum.photos/seed/overdrive/400/600",
+    "backdrop": "https://picsum.photos/seed/overdrive-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=Y-rmzh0PI3c",
+    "featured": false
+  },
+  {
+    "id": 16,
+    "title": "Royal Secrets",
+    "type": "series",
+    "categories": [
+      "Drama",
+      "Romance"
+    ],
+    "description": "In a fictional European kingdom, a palace maid uncovers secrets that could topple the crown.",
+    "year": 2019,
+    "duration": 58,
+    "seasons": 5,
+    "rating": 8.2,
+    "image": "https://picsum.photos/seed/royal-secrets/400/600",
+    "backdrop": "https://picsum.photos/seed/royal-secrets-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=mN0zPOpADL4",
+    "featured": false
+  },
+  {
+    "id": 17,
+    "title": "Moon Base Kids",
+    "type": "movie",
+    "categories": [
+      "Sci-Fi",
+      "Family",
+      "Comedy"
+    ],
+    "description": "Children living on the first moon colony accidentally launch the base's only rocket.",
+    "year": 2023,
+    "duration": 94,
+    "seasons": null,
+    "rating": 6.9,
+    "image": "https://picsum.photos/seed/moon-base-kids/400/600",
+    "backdrop": "https://picsum.photos/seed/moon-base-kids-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=UXqq0ZvbOnk",
+    "featured": false
+  },
+  {
+    "id": 18,
+    "title": "The Whisper Files",
+    "type": "series",
+    "categories": [
+      "Horror",
+      "Mystery"
+    ],
+    "description": "Every episode, a podcast host investigates a new urban legend, and one of them follows her home.",
+    "year": 2022,
+    "duration": 40,
+    "seasons": 2,
+    "rating": 7.5,
+    "image": "https://picsum.photos/seed/the-whisper-files/400/600",
+    "backdrop": "https://picsum.photos/seed/the-whisper-files-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=_cMxraX_5RE",
+    "featured": false
+  },
+  {
+    "id": 19,
+    "title": "Summer in Lisbon",
+    "type": "movie",
+    "categories": [
+      "Romance",
+      "Comedy"
+    ],
+    "description": "A travel blogger and a grumpy tour guide are stuck together for one chaotic summer.",
+    "year": 2024,
+    "duration": 101,
+    "seasons": null,
+    "rating": 6.7,
+    "image": "https://picsum.photos/seed/summer-in-lisbon/400/600",
+    "backdrop": "https://picsum.photos/seed/summer-in-lisbon-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+    "featured": false
+  },
+  {
+    "id": 20,
+    "title": "Mountain Rescue",
+    "type": "series",
+    "categories": [
+      "Action",
+      "Drama"
+    ],
+    "description": "The volunteers of a mountain rescue team risk everything in Europe's most dangerous peaks.",
+    "year": 2021,
+    "duration": 47,
+    "seasons": 3,
+    "rating": 7.8,
+    "image": "https://picsum.photos/seed/mountain-rescue/400/600",
+    "backdrop": "https://picsum.photos/seed/mountain-rescue-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=eRsGyueVLvQ",
+    "featured": false
+  },
+  {
+    "id": 21,
+    "title": "Code Red",
+    "type": "movie",
+    "categories": [
+      "Thriller",
+      "Action"
+    ],
+    "description": "A hacker has 90 minutes to stop a cyberattack on the city's power grid.",
+    "year": 2020,
+    "duration": 90,
+    "seasons": null,
+    "rating": 6.6,
+    "image": "https://picsum.photos/seed/code-red/400/600",
+    "backdrop": "https://picsum.photos/seed/code-red-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=R6MlUcmOul8",
+    "featured": false
+  },
+  {
+    "id": 22,
+    "title": "Wild Planet",
+    "type": "series",
+    "categories": [
+      "Documentary",
+      "Family"
+    ],
+    "description": "Breathtaking footage of animals surviving in the most extreme places on Earth.",
+    "year": 2023,
+    "duration": 50,
+    "seasons": 2,
+    "rating": 9.2,
+    "image": "https://picsum.photos/seed/wild-planet/400/600",
+    "backdrop": "https://picsum.photos/seed/wild-planet-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=TLkA0RELQ1g",
+    "featured": false
+  },
+  {
+    "id": 23,
+    "title": "The Clockmaker",
+    "type": "movie",
+    "categories": [
+      "Fantasy",
+      "Mystery"
+    ],
+    "description": "An old clockmaker's creations begin to tick backwards, rewinding the town's history.",
+    "year": 2021,
+    "duration": 115,
+    "seasons": null,
+    "rating": 8.0,
+    "image": "https://picsum.photos/seed/the-clockmaker/400/600",
+    "backdrop": "https://picsum.photos/seed/the-clockmaker-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=WhWc3b3KhnY",
+    "featured": false
+  },
+  {
+    "id": 24,
+    "title": "Stand-Up Tonight",
+    "type": "series",
+    "categories": [
+      "Comedy"
+    ],
+    "description": "Fresh comedians perform their best sets in front of a live audience.",
+    "year": 2024,
+    "duration": 30,
+    "seasons": 1,
+    "rating": 6.5,
+    "image": "https://picsum.photos/seed/stand-up-tonight/400/600",
+    "backdrop": "https://picsum.photos/seed/stand-up-tonight-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=Y-rmzh0PI3c",
+    "featured": false
+  },
+  {
+    "id": 25,
+    "title": "Frozen Trail",
+    "type": "movie",
+    "categories": [
+      "Thriller",
+      "Adventure"
+    ],
+    "description": "A dog-sled race turns deadly when a blizzard strands the competitors with a killer among them.",
+    "year": 2022,
+    "duration": 109,
+    "seasons": null,
+    "rating": 7.3,
+    "image": "https://picsum.photos/seed/frozen-trail/400/600",
+    "backdrop": "https://picsum.photos/seed/frozen-trail-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=mN0zPOpADL4",
+    "featured": false
+  },
+  {
+    "id": 26,
+    "title": "Second Chances",
+    "type": "series",
+    "categories": [
+      "Drama"
+    ],
+    "description": "Patients and doctors at a small hospital learn that everyone deserves another try.",
+    "year": 2020,
+    "duration": 44,
+    "seasons": 4,
+    "rating": 7.6,
+    "image": "https://picsum.photos/seed/second-chances/400/600",
+    "backdrop": "https://picsum.photos/seed/second-chances-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=UXqq0ZvbOnk",
+    "featured": false
+  },
+  {
+    "id": 27,
+    "title": "Galaxy Rangers",
+    "type": "movie",
+    "categories": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "description": "A ragtag crew of space pilots must defend a planet nobody else cares about.",
+    "year": 2024,
+    "duration": 128,
+    "seasons": null,
+    "rating": 7.1,
+    "image": "https://picsum.photos/seed/galaxy-rangers/400/600",
+    "backdrop": "https://picsum.photos/seed/galaxy-rangers-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=_cMxraX_5RE",
+    "featured": false
+  },
+  {
+    "id": 28,
+    "title": "Haunted Hotel",
+    "type": "movie",
+    "categories": [
+      "Horror",
+      "Comedy"
+    ],
+    "description": "Two influencers spend a night in a haunted hotel for views, and the ghosts want views too.",
+    "year": 2023,
+    "duration": 88,
+    "seasons": null,
+    "rating": 6.2,
+    "image": "https://picsum.photos/seed/haunted-hotel/400/600",
+    "backdrop": "https://picsum.photos/seed/haunted-hotel-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+    "featured": false
+  },
+  {
+    "id": 29,
+    "title": "The Bakery on Elm Street",
+    "type": "series",
+    "categories": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "description": "A big-city lawyer inherits her grandmother's bakery and has no idea how to bake.",
+    "year": 2022,
+    "duration": 35,
+    "seasons": 2,
+    "rating": 7.3,
+    "image": "https://picsum.photos/seed/the-bakery-on-elm-street/400/600",
+    "backdrop": "https://picsum.photos/seed/the-bakery-on-elm-street-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=eRsGyueVLvQ",
+    "featured": false
+  },
+  {
+    "id": 30,
+    "title": "Undercover",
+    "type": "series",
+    "categories": [
+      "Crime",
+      "Thriller",
+      "Action"
+    ],
+    "description": "An officer goes undercover inside a gang so deep she starts to forget which side she's on.",
+    "year": 2021,
+    "duration": 55,
+    "seasons": 3,
+    "rating": 8.5,
+    "image": "https://picsum.photos/seed/undercover/400/600",
+    "backdrop": "https://picsum.photos/seed/undercover-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=R6MlUcmOul8",
+    "featured": false
+  },
+  {
+    "id": 31,
+    "title": "Tiny Robots",
+    "type": "movie",
+    "categories": [
+      "Animation",
+      "Family",
+      "Sci-Fi"
+    ],
+    "description": "A tiny cleaning robot dreams of becoming a famous explorer.",
+    "year": 2019,
+    "duration": 85,
+    "seasons": null,
+    "rating": 7.9,
+    "image": "https://picsum.photos/seed/tiny-robots/400/600",
+    "backdrop": "https://picsum.photos/seed/tiny-robots-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=TLkA0RELQ1g",
+    "featured": false
+  },
+  {
+    "id": 32,
+    "title": "Love, Unplugged",
+    "type": "movie",
+    "categories": [
+      "Romance",
+      "Drama"
+    ],
+    "description": "A couple agrees to spend one month without phones and finally meet each other.",
+    "year": 2023,
+    "duration": 97,
+    "seasons": null,
+    "rating": 6.8,
+    "image": "https://picsum.photos/seed/love-unplugged/400/600",
+    "backdrop": "https://picsum.photos/seed/love-unplugged-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=WhWc3b3KhnY",
+    "featured": false
+  },
+  {
+    "id": 33,
+    "title": "Volcano Season",
+    "type": "series",
+    "categories": [
+      "Documentary",
+      "Adventure"
+    ],
+    "description": "Scientists race to understand Iceland's restless volcanoes before the next eruption.",
+    "year": 2024,
+    "duration": 48,
+    "seasons": 1,
+    "rating": 8.9,
+    "image": "https://picsum.photos/seed/volcano-season/400/600",
+    "backdrop": "https://picsum.photos/seed/volcano-season-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=Y-rmzh0PI3c",
+    "featured": false
+  },
+  {
+    "id": 34,
+    "title": "Nightshift",
+    "type": "movie",
+    "categories": [
+      "Thriller",
+      "Mystery"
+    ],
+    "description": "A night guard at a museum notices the exhibits are in different places every morning.",
+    "year": 2020,
+    "duration": 102,
+    "seasons": null,
+    "rating": 7.0,
+    "image": "https://picsum.photos/seed/nightshift/400/600",
+    "backdrop": "https://picsum.photos/seed/nightshift-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=mN0zPOpADL4",
+    "featured": false
+  },
+  {
+    "id": 35,
+    "title": "Space Cadets",
+    "type": "series",
+    "categories": [
+      "Animation",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "description": "The worst students at the space academy are accidentally given the best ship in the fleet.",
+    "year": 2023,
+    "duration": 24,
+    "seasons": 2,
+    "rating": 7.7,
+    "image": "https://picsum.photos/seed/space-cadets/400/600",
+    "backdrop": "https://picsum.photos/seed/space-cadets-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=UXqq0ZvbOnk",
+    "featured": false
+  },
+  {
+    "id": 36,
+    "title": "The Final Whistle",
+    "type": "movie",
+    "categories": [
+      "Drama",
+      "Sport"
+    ],
+    "description": "A small-town football team gets one shot at the national cup.",
+    "year": 2022,
+    "duration": 114,
+    "seasons": null,
+    "rating": 7.4,
+    "image": "https://picsum.photos/seed/the-final-whistle/400/600",
+    "backdrop": "https://picsum.photos/seed/the-final-whistle-bg/1280/720",
+    "trailerUrl": "https://www.youtube.com/watch?v=_cMxraX_5RE",
+    "featured": false
+  }
+]

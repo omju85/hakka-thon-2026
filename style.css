@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #141414;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
+  padding: 16px 4%;
+}
+
+.search-wrap {
+  position: relative;
+  margin-top: 12px;
+  max-width: 260px;
+}
+
+#search {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  width: 280px;
+  max-height: 320px;
+  margin: 0;
+  padding: 6px;
+  overflow: auto;
+  list-style: none;
+  background: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 6px;
+}
+
+.search-results[hidden] {
+  display: none;
+}
+
+.search-results a {
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-results a:hover {
+  background: #333;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 28px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.site-nav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.site-nav a.active {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* The hero MUST have a height, otherwise Swiper shows nothing */
+.hero {
+  height: 70vh;
+}
+
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  padding: 24px 4%;
+}
+
+.movie-page {
+  padding: 0;
+}
+
+.movie-hero {
+  position: relative;
+  min-height: 62vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.movie-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.88) 0%, transparent 65%),
+    linear-gradient(to top, #141414 0%, transparent 50%);
+}
+
+.movie-hero-content {
+  position: relative;
+  max-width: 680px;
+  padding: 80px 4% 28px;
+}
+
+.movie-hero-content h1 {
+  font-size: clamp(32px, 5vw, 60px);
+  margin-bottom: 12px;
+}
+
+.movie-hero-content p {
+  margin: 12px 0 0;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.movie-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(180px, 280px);
+  gap: 28px;
+  align-items: start;
+  padding: 8px 4% 80px;
+}
+
+.video-wrap {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.movie-side img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* TODO: style your cards, rows, buttons... make it yours! */
